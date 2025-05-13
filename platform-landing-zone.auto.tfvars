@@ -197,8 +197,6 @@ management_group_settings = {
         }
       }
     }
-    /*
-    # Example of how to update a policy assignment enforcement mode for DDOS Protection Plan
     connectivity = {
       policy_assignments = {
         Enable-DDoS-VNET = {
@@ -206,7 +204,6 @@ management_group_settings = {
         }
       }
     }
-    */
     /*
     # Example of how to update a policy assignment enforcement mode for Private Link DNS Zones
     corp = {
