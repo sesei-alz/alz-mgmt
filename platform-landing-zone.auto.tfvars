@@ -145,7 +145,7 @@ You can further configure management groups and policy by supplying a `lib` fold
 */
 management_group_settings = {
   location           = "$${starter_location_01}"
-  architecture_name  = "alz"
+  architecture_name  = "steeleurope"
   parent_resource_id = "$${root_parent_management_group_id}"
   policy_default_values = {
     ama_change_tracking_data_collection_rule_id = "$${ama_change_tracking_data_collection_rule_id}"
@@ -162,19 +162,19 @@ management_group_settings = {
   subscription_placement = {
     identity = {
       subscription_id       = "$${subscription_id_identity}"
-      management_group_name = "identity"
+      management_group_name = "steeleurope-identity"
     }
     connectivity = {
       subscription_id       = "$${subscription_id_connectivity}"
-      management_group_name = "connectivity"
+      management_group_name = "steeleurope-connectivity"
     }
     management = {
       subscription_id       = "$${subscription_id_management}"
-      management_group_name = "management"
+      management_group_name = "steeleurope-management"
     }
   }
   policy_assignments_to_modify = {
-    alz = {
+    steeleurope-root = {
       policy_assignments = {
         Deploy-MDFC-Config-H224 = {
           parameters = {
@@ -197,7 +197,7 @@ management_group_settings = {
         }
       }
     }
-    connectivity = {
+    steeleurope-connectivity = {
       policy_assignments = {
         Enable-DDoS-VNET = {
           enforcement_mode = "DoNotEnforce"
