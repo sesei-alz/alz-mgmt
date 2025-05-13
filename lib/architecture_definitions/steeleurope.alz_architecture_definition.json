@@ -1,0 +1,96 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/architecture_definition.json",
+  "name": "steeleurope",
+  "management_groups": [
+    {
+      "archetypes": [
+        "root"
+      ],
+      "display_name": "steeleurope",
+      "exists": false,
+      "id": "steeleurope-root",
+      "parent_id": null
+    },
+    {
+      "archetypes": [
+        "platform"
+      ],
+      "display_name": "steeleurope Platform",
+      "exists": false,
+      "id": "steeleurope-platform",
+      "parent_id": "steeleurope-root"
+    },
+    {
+      "archetypes": [
+        "landing_zones"
+      ],
+      "display_name": "steeleurope Landing zones",
+      "exists": false,
+      "id": "steeleurope-landingzones",
+      "parent_id": "steeleurope-root"
+    },
+    {
+      "archetypes": [
+        "corp"
+      ],
+      "display_name": "steeleurope Corp",
+      "exists": false,
+      "id": "steeleurope-corp",
+      "parent_id": "steeleurope-landingzones"
+    },
+    {
+      "archetypes": [
+        "online"
+      ],
+      "display_name": "steeleurope Online",
+      "exists": false,
+      "id": "steeleurope-online",
+      "parent_id": "steeleurope-landingzones"
+    },
+    {
+      "archetypes": [
+        "sandbox"
+      ],
+      "display_name": "steeleurope Sandbox",
+      "exists": false,
+      "id": "steeleurope-sandbox",
+      "parent_id": "steeleurope-root"
+    },
+    {
+      "archetypes": [
+        "management"
+      ],
+      "display_name": "steeleurope Management",
+      "exists": false,
+      "id": "steeleurope-management",
+      "parent_id": "steeleurope-platform"
+    },
+    {
+      "archetypes": [
+        "connectivity"
+      ],
+      "display_name": "steeleurope Connectivity",
+      "exists": false,
+      "id": "steeleurope-connectivity",
+      "parent_id": "steeleurope-platform"
+    },
+    {
+      "archetypes": [
+        "identity"
+      ],
+      "display_name": "steeleurope Identity",
+      "exists": false,
+      "id": "steeleurope-identity",
+      "parent_id": "steeleurope-platform"
+    },
+    {
+      "archetypes": [
+        "decommissioned"
+      ],
+      "display_name": "steeleurope Decommissioned",
+      "exists": false,
+      "id": "steeleurope-decommissioned",
+      "parent_id": "steeleurope-root"
+    }
+  ]
+}
